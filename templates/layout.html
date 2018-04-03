@@ -11,7 +11,6 @@
 		<meta property="og:url" content="http://dataforgood.no">
 		<!-- stylesheets -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-		<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
 		<link rel="stylesheet" href="{{ '/static/css/main.css' | url }}" />
 	</head>
 	<body class="{% block bodyclasses %}{% endblock %}">
@@ -26,10 +25,10 @@
 			    </p>
 			</div>
 			<!-- Header -->
-			  <header>
-			    <h1>DataForGood</h1>
-			    <nav>
-			      <ul class="nav navbar-nav">
+			<header id="header" class="{% block headerclasses %}{% endblock %}">
+		        <a href="/" title="home"><img src="{{ '/static/images/logo.svg' | url }}" height="55" title="DataForGood logo" alt="DataForGood logo"></a>
+		        <nav id="nav">
+		            <ul>
 				<li{% if this._path == '/' %} class="active"{% endif
 				  %}><a href="{{ '/'|url }}">Welcome</a></li>
 				{% for href, title in [
@@ -40,13 +39,11 @@
 				    %}><a href="{{ href|url }}">{{ title }}</a></li>
 				{% endfor %}
 			      </ul>
-			    </nav>
-			  </header>
-	  <div class="page">
-	    {% block body %}{% endblock %}
-	  </div>
-	  <footer>
-	    &copy; Copyright 2018 by DataForGood Norway.
-	  </footer>
+		 </nav>
+		    </header>
+        	{% block main %}{% endblock %}
+			{% include 'partials/footer.html' %}
+		</div>
+        {% include 'partials/scripts.html' %}
 	</body>
 </html>

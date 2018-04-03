@@ -1,0 +1,19 @@
+title: Documentation
+---
+description: learn how to contribute on projects that matters.
+---
+body:
+<div class="wrapper style1">
+    <section id="main" class="container">
+        <header class="major">
+            <h1 class="h2">Documentation and guides</h1>
+        </header>
+        <section id="content" class="box">
+            <div class="row uniform">
+                <div class="12u align-center">
+                    <p>Coming soon!</p>
+                </div>
+            </div>
+        </section>
+</section>
+</div>

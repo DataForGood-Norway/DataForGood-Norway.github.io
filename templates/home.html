@@ -1,0 +1,157 @@
+{% extends 'layout.html' %}
+
+{% block title %}A community using data as a mean toward positive impacts{% endblock %}
+
+{% block description %}Data For Good aims at solving social and environmental issues using data science and technology. We are a community of thinkers and  developers that collaborate on meaningful projects with a positive and tangible impact on the world. 
+​We share our knowledge and train other developers in order to expand our impact.{% endblock %}
+
+{% block bodyclasses %}landing{% endblock %}
+
+{% block headerclasses %}alt{% endblock %}
+
+{% block main %}
+<!-- Banner -->
+<section id="banner">
+    <h1 class="h2">A Community Of Thinkers and developers<br>who collaborate on projects that matters.</h1>
+    <p></p>
+    <ul class="actions">
+        <li><a class="button" href="#join" title="join us">Join us</a></li>
+        <li><a href="#read-more" class="button success" title="read more">Read more</a></li>
+    </ul>
+</section>
+
+<!-- One -->
+<div class="wrapper style1">
+    <div class="align-center">
+        <ul class="menu">
+            <li>
+              <span class="hide-mobile">
+                    <iframe src="https://ghbtns.com/github-btn.html?user=DataForGood-Norway&repo=read-this-first&type=star&count=true&size=large" frameborder="0" scrolling="0" width="160px" height="30px"></iframe>
+                </span>
+            </li>
+            <li>
+                <a href="https://twitter.com/intent/follow?screen_name=DataForGoodNO" title="follow @DataForGoodNO on twitter" class="twitter-follow-button" data-size="large" data-show-count="true">Follow @DataForGoodNO</a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+<div class="wrapper style2" id="read-more">
+    <section class="container">
+        <header class="major mt06">
+            <h2>About the game</h2>
+        </header>
+        <div class="row uniform">
+            <div class="4u 12u(narrower)">
+                <div class="box special align-center">
+                    <i class="icon major alt fa-terminal"></i>
+                    <h3>Terminal-based</h3>
+                    <p>Install and play Warwick from the comfort of your
+                     favourite place, the terminal. Bonus point: you can play without your
+                     boss noticing!</p>
+                </div>
+            </div>
+            <div class="4u 12u(narrower)">
+                <div class="box special align-center">
+                    <i class="icon major alt fa-flag"></i>
+                    <h3>Factions</h3>
+                    <p>Play as a Byzantine, Norse, Frank or Longobard ruler.
+                        Each faction has different bonuses and unique units,
+                        to suit a different playstyles, so choose wisely!
+                    </p>
+                </div>
+            </div>
+            <div class="4u 12u(narrower)">
+                <div class="box special align-center">
+                    <i class="icon major alt fa-puzzle-piece"></i>
+                    <h3>Build your strategy</h3>
+                    <p>Combine military, economic and political decisions to build
+                    your own strategy by allying, conquering or bribing other
+                    players.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row uniform">
+            <div class="4u 12u(narrower)">
+                <div class="box special align-center">
+                    <i class="icon major alt fa-trophy"></i>
+                    <h3>Rise to the top</h3>
+                    <p>Start as a lesser noble and reach the top before the
+                       others, by conquering holds and fortresses. The first to
+                       become king or queen of its own faction wins.</p>
+                </div>
+            </div>
+            <div class="4u 12u(narrower)">
+                <div class="box special align-center">
+                    <i class="icon major alt fa-line-chart"></i>
+                    <h3>Statistics</h3>
+                    <p>Playing from the terminal is awesome, but having rankings and
+                        detailed statistics in colorful charts is even more.
+                       Who doesn't love colored charts?</p>
+                </div>
+            </div>
+            <div class="4u 12u(narrower)">
+                <div class="box special align-center">
+                    <i class="icon major alt fa-comments"></i>
+                    <h3>Community</h3>
+                    <p>Join the community on the official forums or follow us on
+                        twitter to meet other players.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="wrapper style2 style2--alt">
+    <section class="container 125%">
+        <header class="major">
+            <h2>Our Mission</h2>
+        </header>
+        <div class="row uniform">
+            <div class="6u 12u(narrower)">
+                <div class="image fit">
+                    <img width="725" src="{{ '/static/images/Moving-Goals.gif' | url }}" alt="terminal screenshot" title="terminal screenshot">
+                </div>
+            </div>
+            <div class="6u 12u(narrower)">
+                <h3>data as a mean toward positive impacts</h3>
+                <p>Data For Good aims at solving social and environmental issues using data science and technology. We are a community of thinkers and  developers that collaborate on meaningful projects with a positive and tangible impact on the world.</p>
+                <p>We share our knowledge and train other developers in order to expand our impact.</p>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- Two -->
+    <div class="wrapper style3">
+        <section class="container 75%">
+            <header class="major">
+                <h2>Join the team</h2>
+                <p>DataForGood is open to anyone willing to volunteer some time and skills. Signup to receive updates!</p>
+            </header>
+            <div class="row uniform">
+              <form method="POST" id="join" class="12u" data-ajax-form="join" action="https://formspree.io/contact@dataforgood.no">
+		<input type="hidden" name="_subject" value="D4G News subscription" />
+                    <div class="row">
+                        <div class="hide" data-form-error="join">
+                            <p>Something went wrong. Please check your email address and try again</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="8u 12u(narrower)">
+                            <input type="email" name="email" id="email" placeholder="Email Address">
+                        </div>
+                        <div class="4u 12u(narrower)">
+                            <input type="submit" value="Subscribe" class="subscribe" data-form-submit="join">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i>*We will manually send you an invite to Slack and our mailing list by email. Check your spams!</i>
+                    </div>
+                </form>
+                <div class="12u align-center hide" data-form-success="join">
+                    <p class="h2">Thank you for joining!</p>
+                    <p>We'll be in touch soon</p>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}

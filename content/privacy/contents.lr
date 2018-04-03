@@ -1,0 +1,26 @@
+title: Privacy policy
+---
+description: DataForGood's privacy policy and what we do with data
+---
+body:
+<div class="wrapper style1">
+    <section id="main" class="container">
+        <header class="major">
+            <h1 class="h2">Privacy policy</h1>
+        </header>
+        <!-- Content -->
+            <section id="content" class="box">
+                <h3>Use of cookies</h3>
+                <p>We use third-party service providers (Google Analytics) that may set cookies on your device.</p>
+ 
+
+                 <h3>Use of collected data</h3>
+                 <ul>
+                     <li>We may share aggregated, anonymous data about our
+                       users.</li>
+                    <li>We do not share or sell sensitive data collected
+                     from our users.</li>
+                 </ul>
+            </section>
+    </section>
+</div>

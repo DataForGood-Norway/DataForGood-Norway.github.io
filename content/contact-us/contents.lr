@@ -1,0 +1,48 @@
+title: Contact us
+---
+description: You can contact our team using the contact form
+---
+body:
+<div class="wrapper style1">
+    <section id="main" class="container">
+        <header class="major">
+            <h1 class="h2">Contact us</h1>
+        </header>
+            <section id="content" class="box">
+                <div class="row uniform">
+                    <div class="12u">
+                        <p>Want to join us or submit a project idea? Write to us, we're friendly people :)</p>
+                        <form method="POST" action="https://formspree.io/contact@dataforgood.no">
+			    <input type="hidden" name="_subject" value="D4G Contact Form" />
+                            <div class="row uniform 50%">
+                                <div class="12u">
+                                    <input type="text" name="name" id="name" placeholder="Name" />
+                                </div>
+                            </div>
+                            <div class="row uniform 50%">
+                                <div class="12u">
+                                    <input type="email" name="_replyto" id="email" placeholder="Email" />
+                                </div>
+                            </div>
+                            <div class="row uniform 50%">
+                                <div class="12u">
+                                    <textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+                                </div>
+                            </div>
+                            <div class="row uniform 50%">
+                                <div class="12u">
+                                    <ul class="actions">
+                                        <li><input type="submit" value="Send" data-form-submit="contactus"></li>
+                                        <li><span data-form-error="contactus" class="hide">An error occured. Please try again later</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="12u">
+                            <p class="hide" data-form-success="contactus">Your message has been sent</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
+</div>
