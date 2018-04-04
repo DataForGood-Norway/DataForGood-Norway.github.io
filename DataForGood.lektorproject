@@ -1,2 +1,8 @@
 [project]
 name = DataForGood
+
+[servers.ghpages]
+target = ghpages://DataForGood-Norway/DataForGood-Norway.github.io.git
+
+[servers.production]
+target = ghpages://DataForGood-Norway/DataForGood-Norway.github.io.git?cname=www.dataforgood.no
