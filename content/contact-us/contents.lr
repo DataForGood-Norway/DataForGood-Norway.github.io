@@ -11,17 +11,23 @@ body:
             <section id="content" class="box">
                 <div class="row uniform">
                     <div class="12u">
-                        <p>Want to join us or submit a project idea? Write to us, we're friendly people :)</p>
+			<p>Whether you’re an experienced developer eager to help, looking for a side project or still learning, we are inviting you to join us to volunteer some time and skills on great projects.</p>
+                        <p>You can also use this form to submit a project idea? Don't be shy, we're friendly people :)</p>			
                         <form method="POST" action="https://formspree.io/contact@dataforgood.no">
 			    <input type="hidden" name="_subject" value="D4G Contact Form" />
                             <div class="row uniform 50%">
                                 <div class="12u">
-                                    <input type="text" name="name" id="name" placeholder="Name" />
+                                    <input type="text" name="name" id="name" placeholder="Name" required/>
                                 </div>
                             </div>
                             <div class="row uniform 50%">
                                 <div class="12u">
-                                    <input type="email" name="_replyto" id="email" placeholder="Email" />
+                                    <input type="email" name="_replyto" id="email" placeholder="Email" required />
+                                </div>
+                            </div>
+                            <div class="row uniform 50%">
+                                <div class="12u">
+                                    <input type="text" name="pseudo" id="pseudo" placeholder="Username on Github" />
                                 </div>
                             </div>
                             <div class="row uniform 50%">

@@ -1676,7 +1676,7 @@ input[type="button"],
   -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  background-color: #e96c77;
+  background-color: #30A6DF; //e96c77;
   border: 0;
   border-radius: 0;
   color: #ffffff !important;
@@ -1696,7 +1696,7 @@ input[type="button"],
   input[type="reset"]:hover,
   input[type="button"]:hover,
   .button:hover {
-    background-color: #ec828c;
+      background-color: #ec828c;
     color: #ffffff !important; }
   input[type="submit"]:active,
   input[type="reset"]:active,
