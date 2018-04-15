@@ -18,3 +18,5 @@ body:
             </section>
     </section>
 </div>
+---
+_template: projects.html
