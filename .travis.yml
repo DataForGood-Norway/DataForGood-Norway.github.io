@@ -1,7 +1,7 @@
 language: python
 python: 3.6
 install: "pip install Lektor"
-script: "grunt && lektor build"
+script: "lektor build"
 deploy:
   provider: script
   script: "lektor deploy ghpages"
