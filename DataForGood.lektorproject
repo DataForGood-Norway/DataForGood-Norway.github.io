@@ -5,4 +5,4 @@ name = DataForGood
 target = ghpages+https://DataForGood-Norway/DataForGood-Norway.github.io.git
 
 [servers.production]
-target = ghpages+https://://DataForGood-Norway/DataForGood-Norway.github.io.git?cname=www.dataforgood.no
+target = ghpages+https://DataForGood-Norway/DataForGood-Norway.github.io.git?cname=www.dataforgood.no
