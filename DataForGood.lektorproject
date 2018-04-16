@@ -1,5 +1,0 @@
-[project]
-name = DataForGood
-
-[servers.ghpages]
-target = ghpages://DataForGood-Norway/DataForGood-Norway.github.io.git

@@ -1,15 +1,46 @@
-{% extends 'layout.html' %}
-
-{% block title %}A community using data as a powerful mean toward positive impacts{% endblock %}
-
-{% block description %}Data For Good aims at solving social and environmental issues using data science and technology. We are a community of thinkers and  developers that collaborate on meaningful projects with a positive and tangible impact on the world. 
-​We share our knowledge and train other developers in order to expand our impact.{% endblock %}
-
-{% block bodyclasses %}landing{% endblock %}
-
-{% block headerclasses %}alt{% endblock %}
-
-{% block main %}
+<!DOCTYPE HTML>
+<html lang="en-US">
+	<head>
+		<title>A community using data as a powerful mean toward positive impacts - DataForGood</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Data For Good aims at solving social and environmental issues using data science and technology. We are a community of thinkers and  developers that collaborate on meaningful projects with a positive and tangible impact on the world. 
+​We share our knowledge and train other developers in order to expand our impact.">
+		<!-- open graph meta -->
+		<meta property="og:title" content="A community using data as a powerful mean toward positive impacts - DataForGood">
+		<meta property="og:description" content="Data For Good aims at solving social and environmental issues using data science and technology. We are a community of thinkers and  developers that collaborate on meaningful projects with a positive and tangible impact on the world. 
+​We share our knowledge and train other developers in order to expand our impact.">
+		<meta property="og:url" content="http://dataforgood.no">
+		<!-- stylesheets -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+		<link rel="stylesheet" href="./static/css/main.css" />
+	</head>
+	<body class="landing">
+		<div id="page-wrapper">
+			<div class="align-center privacy">
+			    <p>
+			        <i class="fa fa-exclamation-circle"></i>
+			        <span>
+			            By using our website, you agree to our use of cookies. <a href="/privacy.html" title="Learn about our privacy policy">Learn more</a>
+			        </span>
+			        <button class="button privacy-dismiss">Close</button>
+			    </p>
+			</div>
+			<!-- Header -->
+			<header id="header" class="alt">
+		        <a href="/" title="home"><img src="./static/images/logo.svg" height="55" title="DataForGood logo" alt="DataForGood logo"></a>
+		        <nav id="nav">
+		            <ul>
+				<li class="active"><a href="./">Home</a></li>
+				
+				  <li><a href="./projects/">Projects</a></li>
+				
+				  <li><a href="./about/">About</a></li>
+				
+			      </ul>
+		 </nav>
+		    </header>
+        	
 <!-- Banner -->
 <section id="banner">
     <h1 class="h2">A Community Of Thinkers and developers<br>who collaborate on projects that matters.</h1>
@@ -17,7 +48,7 @@
     <ul class="actions">
       <li><a class="button" style="width:200px;  background-color:#4EAD51;" href="#read-more" title="Our projects">Our projects</a></li>
       <li><a class="button" style="width:200px; background-color:#4EAD51;" href="#newsletter" title="Follow us">Follow us</a></li>
-      <li><a class="button" style="width:200px; background-color:#4EAD51;" href="{{ '/contact-us' | url }}" title="join us">Join us</a></li>
+      <li><a class="button" style="width:200px; background-color:#4EAD51;" href="./contact-us/" title="join us">Join us</a></li>
       
     </ul>
 </section>
@@ -30,7 +61,7 @@
         <div class="row uniform">
             <div class="6u 12u(narrower)">
                 <div class="image fit">
-                    <img width="725" src="{{ '/static/images/Moving-Goals.gif' | url }}" alt="terminal screenshot" title="terminal screenshot">
+                    <img width="725" src="./static/images/Moving-Goals.gif" alt="terminal screenshot" title="terminal screenshot">
                 </div>
             </div>
             <div class="6u 12u(narrower)">
@@ -82,14 +113,14 @@
         <div class="row uniform">
             <div class="6u 12u(narrower)">
                 <div class="box special align-center">
-                    <i class="icon major alt "><img style="height:4.5em;width:4.5em" src="/static/css/images/projectLogo_orcaTag.png" alt="OrcaTag"></i>
+                    <i class="icon major alt "><img style="height:4.5em;width:4.5em" src="./static/images/projectLogo_orcaTag.png" alt="OrcaTag"></i>
                     <h3>OrcaTag</h3>
                     <p>Re-identify individual orcas</p>
                 </div>
             </div>
             <div class="6u 12u(narrower)">
                 <div class="box special align-center">
-                    <i class="icon major alt"><img style="height:4.5em;width:4.5em" src="/static/css/images/projectLogo_UNtreaties.png" alt="ResoCrawl"></i>
+                    <i class="icon major alt"><img style="height:4.5em;width:4.5em" src="./static/images/projectLogo_UNtreaties.png" alt="ResoCrawl"></i>
                     <h3>ResoCrawl</h3>
                     <p>Encourage countries to ratify UN treaties.</p>
                 </div>
@@ -98,14 +129,14 @@
         <div class="row uniform">
             <div class="6u 12u(narrower)">
               <div class="box special align-center">
-                    <i class="icon major alt"><img style="height:4.5em;width:4.5em" src="/static/css/images/projectLogo_JobSearchCompanion.png" alt="JobSearch Companion"></i>
+                    <i class="icon major alt"><img style="height:4.5em;width:4.5em" src="./static/images/projectLogo_JobSearchCompanion.png" alt="JobSearch Companion"></i>
                     <h3>JobMatch</h3>
                     <p>A digital companion to help diagnose your job search.</p>
                 </div>
             </div>	  
             <div class="6u 12u(narrower)">
                 <div class="box special align-center">
-                    <i class="icon major alt "><img style="height:4.5em;width:4.5em" src="/static/css/images/projectLogo_VerticalFarm.png" alt="Vertical Farming"></i>
+                    <i class="icon major alt "><img style="height:4.5em;width:4.5em" src="./static/images/projectLogo_VerticalFarm.png" alt="Vertical Farming"></i>
                     <h3>Vertical Farm Analytics</h3>
                     <p>Help grow cleaner vegetables.</p>
                 </div>
@@ -132,4 +163,28 @@
 </div>
 
 
-{% endblock %}
+
+			<footer id="footer">
+    <ul class="menu">
+        <li><a href="./privacy/" title="privacy policy">Privacy Policy</a></li>
+        <li><a href="./contact-us/" title="contact us">Contact Us</a></li>
+        <li>&copy; 2018</li>
+    </ul>
+</footer>
+		</div>
+        <!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.dropotron/1.4.3/jquery.dropotron.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+<script src="./static/js/main.js"></script>
+<!-- WebFontLoader -->
+<script>
+  WebFont.load({
+    google: {
+      families: ['Source Sans Pro:400,400i,600,600i,700,900']
+    }
+  });
+</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	</body>
+</html>
