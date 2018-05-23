@@ -5,6 +5,3 @@ script: "lektor build"
 deploy:
   provider: script
   script: "lektor deploy ghpages"
-  on:
-    all_branches: true
-    condition: $TRAVIS_BRANCH =~ ^source$
