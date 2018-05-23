@@ -6,4 +6,5 @@ deploy:
   provider: script
   script: "lektor deploy master"
   on:
-    branch: source
+    all_branches: true
+    condition: $TRAVIS_BRANCH =~ ^source$

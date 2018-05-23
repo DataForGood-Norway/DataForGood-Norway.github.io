@@ -1,0 +1,2 @@
+[servers.master]
+target = master+https://DataForGood-Norway/DataForGood-Norway.github.io.git
