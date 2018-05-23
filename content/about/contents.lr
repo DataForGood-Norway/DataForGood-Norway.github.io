@@ -10,11 +10,17 @@ body:
         </header>
         <!-- Content -->
             <section id="content" class="box">
-                <h3>Our Mission</h3>
-                <p></p>
+		<h3>Our Mission</h3>    
+		<p>Helping to solve social and environmental issues using data science and technology.</p>
+			
+                <h3>For Whom?</h3>
+                <p>Organisations and public services, local or international, anyone who wants to be an agent for positive change in our world and who needs help finding and implementing technical tools and solutions to pressing issues.</p>
  
-                 <h3>Our Goals</h3>
-		 <p></p>
+                 <h3>Who can get involved?</h3>
+		 <p>Data scientists, developers and everyone with an idea aiming to collaborate on projects that have a positive impact on society or the environment!</p>
+			
+		<h3>Who runs DataForGood Norway?</h3>
+		 <p>The community does!<br>Anybody who wants to contribute to making D4G better is highly encouraged to do so! Everything in D4G thus far has come from grassroots ideas proposed and pushed forward by a community member just like you and there's always more room for improvement. Whether it's starting a new project or proposing a new tool for the community to use, don't hesitate, just go for it!</p>	
             </section>
     </section>
 </div>
