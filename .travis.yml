@@ -4,7 +4,7 @@ install: "pip install Lektor"
 script: "lektor build"
 deploy:
   provider: script
-  script: "lektor deploy master"
+  script: "lektor deploy ghpages"
   on:
     all_branches: true
     condition: $TRAVIS_BRANCH =~ ^source$

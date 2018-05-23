@@ -1,2 +1,2 @@
-[servers.master]
-target = master+https://DataForGood-Norway/DataForGood-Norway.github.io.git
+[servers.ghpages]
+target = ghpages+https://DataForGood-Norway/DataForGood-Norway.github.io.git
