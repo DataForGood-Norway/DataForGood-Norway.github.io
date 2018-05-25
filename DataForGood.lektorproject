@@ -1,9 +1,9 @@
 [project]
 name = DataForGood
 
-[servers.ghpages]
-target = ghpages+https://DataForGood-Norway
+[servers.master]
+target = master+https://DataForGood-Norway
 
 [servers.production]
-target = ghpages+https://DataForGood-Norway
+target = master+https://DataForGood-Norway
 
