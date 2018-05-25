@@ -3,17 +3,12 @@ python: 3.6
 
 install:
   - pip install Lektor
-  - mkdir -p output
-
-script:
-  - lektor build --output-path output
-
-after_success: |
-    if [ -n "$LEKTOR_DEPLOY_PASSWORD" ]; then
-	git checkout --orphan master
-	## git rm -rf --cached .  ## This removes all files, too many
-	cd output
-	git add -f --ignore-errors *.*
-	git -c user.name='Travis' -c user.email='Travis' commit -am init
-	git push --force --quiet https://$LEKTOR_DEPLOY_USERNAME:$LEKTOR_DEPLOY_PASSWORD@github.com/$TRAVIS_REPO_SLUG master
-    fi
+  - mkdir -p ../output
+  - lektor build --output-path ../output
+  - git rm -rf .
+  - cp -r ../output/* .
+  - git checkout --orphan master
+  - echo "dataforgood.no" > CNAME
+  - git add *
+  - git -c user.name="D4G bot" -c user.email="No email" commit -am init 
+  - git push --force https://$LEKTOR_DEPLOY_USERNAME:$LEKTOR_DEPLOY_PASSWORD@github.com/$TRAVIS_REPO_SLUG master
