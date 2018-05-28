@@ -10,6 +10,17 @@
 {% block headerclasses %}alt{% endblock %}
 
 {% block main %}
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.0&appId=1480793242245346&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 <!-- Banner -->
 <section id="banner">
     <h1 class="h2">A Community Of Thinkers and developers<br>who collaborate on projects that matters.</h1>
@@ -136,7 +147,9 @@
             <li>
                 <a href="https://twitter.com/intent/follow?screen_name=DataForGoodNO" title="follow @DataForGoodNO on twitter" class="twitter-follow-button" data-size="large" data-show-count="true">Follow @DataForGoodNO</a>
             </li>
-
+	    <li>
+	      <div class="fb-like" data-href="https://www.facebook.com/DataForGoodNO/" data-layout="box_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+	    </li>
         </ul>
     </div>
 </div>
